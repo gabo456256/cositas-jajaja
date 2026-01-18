@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PARA YSMAR EXTREMO</title>
+    <style>
+        body { margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; background: #000; font-family: 'Comic Sans MS', cursive; text-align: center; overflow: hidden; }
+        #texto { font-size: 5rem; font-weight: 900; transition: 0.2s; z-index: 10; line-height: 1; }
+        
+        /* ROMÁNTICO COLOSAL */
+        .romantico { color: #ff007f; text-shadow: 0 0 50px #ff007f, 0 0 100px #ff007f; animation: latido 0.5s infinite; }
+        @keyframes latido { 0% { transform: scale(1.5); } 50% { transform: scale(1.8); } 100% { transform: scale(1.5); } }
+
+        /* FEO / RISA ENFERMA */
+        .feo { color: #00ff00; text-shadow: 0 0 40px #00ff00, 0 0 80px #ff0000; animation: locura 0.05s infinite; font-size: 8rem !important; }
+        @keyframes locura { 0% { transform: translate(10px, 10px) rotate(5deg); } 50% { transform: translate(-10px, -10px) rotate(-5deg); } 100% { transform: translate(10px, -10px) rotate(5deg); } }
+
+        button { padding: 20px 40px; font-size: 2rem; cursor: pointer; background: #ff007f; color: white; border: none; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <button id="btn">CLIC AQUÍ YSMAR ❤️</button>
+    <div id="texto"></div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const txt = document.getElementById('texto');
+        const body = document.body;
+
+        // Sonidos usando sintetizador de voz (IA) para que sea colosal
+        const hablar = (mensaje, tono, velocidad) => {
+            const msg = new SpeechSynthesisUtterance(mensaje);
+            msg.pitch = tono; // Agudo o grave
+            msg.rate = velocidad; // Rápido o lento
+            window.speechSynthesis.speak(msg);
+        };
+
+        btn.addEventListener('click', () => {
+            btn.style.display = 'none';
+            
+            // 1. ROMÁNTICO
+            txt.innerText = "YSMAR ERES DEMASIADO...";
+            txt.className = "romantico";
+            hablar("Ysmar, eres demasiado bella", 1.5, 0.8);
+
+            // 2. FEO (TRANSICIÓN BRUSCA)
+            setTimeout(() => {
+                txt.innerText = "FEA Y ENFERMA!!! JAJAJAJA";
+                txt.className = "feo";
+                body.style.background = "yellow";
+                hablar("PERO QUE FEA Y ENFERMA ERES JAJAJAJAJAJAJA", 0.1, 1.5);
+            }, 3000);
+
+            // 3. MENTIRA
+            setTimeout(() => {
+                txt.innerText = "na mentira tqm preciosa";
+                txt.className = "romantico";
+                body.style.background = "#000";
+                hablar("na mentira te quiero mucho", 1.2, 0.9);
+            }, 6000);
+
+            // 4. FINAL EXPLOSIVO
+            setTimeout(() => {
+                txt.innerText = "PERO SI ERES UN MONSTRUO JAJAJAJA";
+                txt.className = "feo";
+                body.style.background = "red";
+                hablar("JAJAJAJAJA SI ERES UN MONSTRUO JAJAJAJA", 2, 2);
+            }, 9000);
+        });
+    </script>
+</body>
+  const btn = document.getElementById('btn');
+        const txt = document.getElementById('texto');
+        const body = document.body;
+
+        // Sonidos usando sintetizador de voz (IA) para que sea colosal
+        const hablar = (mensaje, tono, velocidad) => {
+            const msg = new SpeechSynthesisUtterance(mensaje);
+            msg.pitch = tono; // Agudo o grave
+            msg.rate = velocidad; // Rápido o lento
+            window.speechSynthesis.speak(msg);
+        };
+
+        btn.addEventListener('click', () => {
+            btn.style.display = 'none';
+
+            // 1. ROMÁNTICO
+            txt.innerText = "¡Eres lo máximo!";
+            txt.className = "romantico";
+            hablar("Eres lo máximo", 1.5, 0.8);
+
+            // 2. CHISTOSO
+            setTimeout(() => {
+                txt.innerText = "¡Jajaja, qué divertido!";
+                txt.className = "feo";
+                body.style.background = "yellow";
+                hablar("Jajaja, qué divertido", 0.1, 1.5);
+            }, 3000);
+
+            // 3. ROMÁNTICO EXAGERADO
+            setTimeout(() => {
+                txt.innerText = "¡Mi corazón explota de amor!";
+                txt.className = "romantico";
+                body.style.background = "#000";
+                hablar("Mi corazón explota de amor", 1.2, 0.9);
+            }, 6000);
+
+            // 4. CHISTOSO FINAL
+            setTimeout(() => {
+                txt.innerText = "¡Qué risa!";
+                txt.className = "feo";
+                body.style.background = "red";
+                hablar("Qué risa", 2, 2);
+            }, 9000);
+        });
+    </script>
+</body>
+</html>
+</html>
